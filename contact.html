@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ruby Pictures</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Ruby Pictures - Professional and affordable photography services for everyone.">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Ruby Pictures</div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+            <li><a href="index.html" class="smooth-scroll">Home</a></li>
+            <li><a href="about.html" class="smooth-scroll">About Us</a></li>
+            <li><a href="services.html" class="smooth-scroll">Services</a></li>
+            <li><a href="gallery.html" class="smooth-scroll">Gallery</a></li>
+            <li><a href="contact.html" class="smooth-scroll">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact-content">
+      <h1>Ready To Capture Your Moments?</h1>
+      <div class="contact-container">
+          <div class="contact-info">
+              <h2>Contact Information</h2>
+              <p><strong>Phone:</strong> <a href="tel:+0795025865">079 502 5865</a></p>
+              <p><strong>Email:</strong> <a href="mailto:Rubypictures@gmail.com">Rubypictures@gmail.com</a></p>
+              <p><strong>Studio Address:</strong> 123 Memory Lane, Photo City, PC 12345</p>
+              <p><strong>Studio Hours:</strong></p>
+              <p>Monday - Friday: 9am - 6pm</p>
+              <p>Saturday: 10am - 4pm</p>
+              <p>Sunday: Closed</p>
+              
+              <div class="social-links">
+                  <h3>Follow Us</h3>
+                  <p><a href="https://instagram.com/RubyPictures" target="_blank">Instagram: @RubyPictures</a></p>
+                  <p><a href="https://facebook.com/RubyPictures" target="_blank">Facebook: /RubyPictures</a></p>
+              </div>
+          </div>
+          
+          <div class="contact-form">
+              <h2>Send Us a Message</h2>
+              <form id="contactForm">
+                  <div class="form-group">
+                      <label for="name">Name *</label>
+                      <input type="text" id="name" name="name" required>
+                      <span class="error-message"></span>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="email">Email *</label>
+                      <input type="email" id="email" name="email" required>
+                      <span class="error-message"></span>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="phone">Phone *</label>
+                      <input type="tel" id="phone" name="phone">
+                      <span class="error-message"></span>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="service">Service Interest</label>
+                      <select id="service" name="service">
+                          <option value="">Select a service</option>
+                          <option value="family">Family Portraits</option>
+                          <option value="maternity">Maternity & Newborn</option>
+                          <option value="children">Children & Teens</option>
+                          <option value="events">Special Events</option>
+                          <option value="pet">Pet Portraits</option>
+                          <option value="mini">Mini Sessions</option>
+                          <option value="custom">Custom Sessions</option>
+                      </select>
+                    <span class="error-message"></span>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="date">Preferred Date *</label>
+                      <input type="date" id="date" name="date" required>
+                      <span class="error-message"></span>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="message">Message *</label>
+                      <textarea id="message" name="message" rows="5" required></textarea>
+                      <span class="error-message"></span>
+                  </div>
+                  
+                  <button type="submit" class="btn">Send Message</button>
+                  <button type="reset" class="btn btn-secondary">Reset</button>
+              </form>
+              <div id="availability-message"></div>
+          </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Ruby Pictures. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://instagram.com/RubyPictures" target="_blank">Instagram</a>
+        <a href="https://facebook.com/RubyPictures" target="_blank">Facebook</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
